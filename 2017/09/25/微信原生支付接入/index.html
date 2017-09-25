@@ -70,13 +70,21 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="几乎所有第三方支付大概都是下面这个流程：  本来不打算写这个的，毕竟像这些第三方平台接入都比较简单，一般照着官方文档一步步做就可以了，但是微信支付的Demo是不是也该更新了，忍不住让人想吐槽，是不是太懒！！！    ######1.微信最新的sdk里包名都换了，而demo里还没换 2.开发步骤说的不严谨，这个回调的activity路径是：你的包名.wxapi.WXPayEntryActivity就">
+<meta property="og:type" content="article">
 <meta property="og:title" content="CoderWei">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/09/25/微信原生支付接入/index.html">
 <meta property="og:site_name" content="CoderWei">
+<meta property="og:description" content="几乎所有第三方支付大概都是下面这个流程：  本来不打算写这个的，毕竟像这些第三方平台接入都比较简单，一般照着官方文档一步步做就可以了，但是微信支付的Demo是不是也该更新了，忍不住让人想吐槽，是不是太懒！！！    ######1.微信最新的sdk里包名都换了，而demo里还没换 2.开发步骤说的不严谨，这个回调的activity路径是：你的包名.wxapi.WXPayEntryActivity就">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1891780-18aefab4ba304cbb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1891780-c3d1bf447bb85710.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1891780-10c2391a1ce35f19.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-09-25T03:55:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CoderWei">
+<meta name="twitter:description" content="几乎所有第三方支付大概都是下面这个流程：  本来不打算写这个的，毕竟像这些第三方平台接入都比较简单，一般照着官方文档一步步做就可以了，但是微信支付的Demo是不是也该更新了，忍不住让人想吐槽，是不是太懒！！！    ######1.微信最新的sdk里包名都换了，而demo里还没换 2.开发步骤说的不严谨，这个回调的activity路径是：你的包名.wxapi.WXPayEntryActivity就">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1891780-18aefab4ba304cbb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -106,13 +114,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/25/微信原生支付接入/"/>
 
 
 
 
 
-  <title>归档 | CoderWei</title>
+  <title> | CoderWei</title>
   
 
 
@@ -131,7 +139,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
 <!-- <a href="https://github.com/xiaviv"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/8b6b8ccc6da3aa5722903da7b58eb5ab1081adee/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png"></a> -->
@@ -237,185 +245,186 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/25/微信原生支付接入/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderWei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/icon.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderWei">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline"></h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-25T11:55:19+08:00">
+                2017-09-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 4 篇日志。 继续努力。
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
-        
-        
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/25/微信原生支付接入/" itemprop="url">
+          
+            <div class="post-wordcount">
               
-                <span itemprop="name">未命名</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  298
+                </span>
               
-            </a>
-        
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-25T11:55:19+08:00"
-              content="2017-09-25" >
-          09-25
-        </time>
-      </div>
+              
+                <span class="post-meta-divider">|</span>
+              
 
-    </header>
-  </article>
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
 
+          
 
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/25/Android组件化URL之肆意跳转/" itemprop="url">
-              
-                <span itemprop="name">未命名</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-25T11:55:19+08:00"
-              content="2017-09-25" >
-          09-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/22/My-first-hexo-blog/" itemprop="url">
-              
-                <span itemprop="name">My first hexo blog</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-22T23:14:47+08:00"
-              content="2017-09-22" >
-          09-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p>几乎所有第三方支付大概都是下面这个流程：<br><img src="http://upload-images.jianshu.io/upload_images/1891780-18aefab4ba304cbb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="支付流程.png"></p>
+<p> 本来不打算写这个的，毕竟像这些第三方平台接入都比较简单，一般照着官方文档一步步做就可以了，但是微信支付的Demo是不是也该更新了，忍不住让人想吐槽，是不是太懒！！！</p>
+<p>   ######1.微信最新的sdk里包名都换了，而demo里还没换<br><img src="http://upload-images.jianshu.io/upload_images/1891780-c3d1bf447bb85710.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sdk.png"></p>
+<h6 id="2-开发步骤说的不严谨，这个回调的activity路径是：你的包名-wxapi-WXPayEntryActivity就可以了，还以为是全路径"><a href="#2-开发步骤说的不严谨，这个回调的activity路径是：你的包名-wxapi-WXPayEntryActivity就可以了，还以为是全路径" class="headerlink" title="2.开发步骤说的不严谨，这个回调的activity路径是：你的包名.wxapi.WXPayEntryActivity就可以了，还以为是全路径"></a>2.开发步骤说的不严谨，这个回调的activity路径是：你的包名.wxapi.WXPayEntryActivity就可以了，还以为是全路径</h6><p><img src="http://upload-images.jianshu.io/upload_images/1891780-10c2391a1ce35f19.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Snip20170224_4.png"></p>
+<p>  ######3.微信支付回调不像ping++支付平台方便 ，回调是一个单独的activity，成功以后还得自己通知调用者，如果想要区分发起支付的来源，也得需要自己维护（比如说你的APP里有多个发起支付的需求，而支付成功以后你需要知道是哪发起的然后做响应的处理），微信支付的回调里就三个errCode，成功以后你并不知道是哪发起的。</p>
+<p>  不过一般这都不是事，都能自己解决，就是感觉微信太不勤快了…</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/22/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-22T15:27:06+08:00"
-              content="2017-09-22" >
-          09-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+  <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+  
+  </div>
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/25/Android组件化URL之肆意跳转/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -423,6 +432,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -443,8 +456,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <img class="site-author-image" itemprop="image"
@@ -512,6 +534,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#2-开发步骤说的不严谨，这个回调的activity路径是：你的包名-wxapi-WXPayEntryActivity就可以了，还以为是全路径"><span class="nav-number">1.</span> <span class="nav-text">2.开发步骤说的不严谨，这个回调的activity路径是：你的包名.wxapi.WXPayEntryActivity就可以了，还以为是全路径</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
