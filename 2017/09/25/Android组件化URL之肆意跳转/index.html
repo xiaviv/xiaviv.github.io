@@ -70,18 +70,21 @@
 
 
 
+<meta name="description" content="抛弃传统的 Manifest 中  配置.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android组件化URL之肆意跳转">
 <meta property="og:url" content="http://yoursite.com/2017/09/25/Android组件化URL之肆意跳转/index.html">
 <meta property="og:site_name" content="CoderWei">
+<meta property="og:description" content="抛弃传统的 Manifest 中  配置.">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1891780-f491b3dc3610a35d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1891780-f491b3dc3610a35d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1891780-6c9fb380fad9d27a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1891780-9172b7cebe697ba0.gif?imageMogr2/auto-orient/strip">
-<meta property="og:updated_time" content="2017-09-25T05:04:33.000Z">
+<meta property="og:updated_time" content="2017-09-25T05:07:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android组件化URL之肆意跳转">
+<meta name="twitter:description" content="抛弃传统的 Manifest 中  配置.">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1891780-f491b3dc3610a35d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -318,7 +321,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,555
+                  1,564
                 </span>
               
 
@@ -355,7 +358,7 @@
       
 
       
-        <p><img src="http://upload-images.jianshu.io/upload_images/1891780-f491b3dc3610a35d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="类图.png"><br><a id="more"></a><br>本文为大家介绍利用 URL Scheme 在应用内任意跳转的实现，通过本地配置文件配置打开你想要打开的任意页面. <strong><em>抛弃传统的 Manifest 中 <intent-filter> 配置.</intent-filter></em></strong><br><strong><em>首先介绍下什么是 URL Scheme ？</em></strong></p>
+        <p><img src="http://upload-images.jianshu.io/upload_images/1891780-f491b3dc3610a35d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="类图.png"><br>抛弃传统的 Manifest 中 <intent-filter> 配置.<br><a id="more"></a><br>本文为大家介绍利用 URL Scheme 在应用内任意跳转的实现，通过本地配置文件配置打开你想要打开的任意页面. <strong><em>抛弃传统的 Manifest 中 <intent-filter> 配置.</intent-filter></em></strong><br><strong><em>首先介绍下什么是 URL Scheme ？</em></strong></intent-filter></p>
 <blockquote>
 <p>URL Scheme 可以通过类似打开网页的方式去通过路由打开一个 Activity，其协议格式和我们打开网页输入的网址类似。</p>
 </blockquote>
@@ -414,7 +417,7 @@
 <p><strong><em>好了介绍这么多，步入正题，首先看下类图和流程图</em></strong></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1891780-f491b3dc3610a35d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="类图.png"></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1891780-6c9fb380fad9d27a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="流程图.png"></p>
-<p>###方法说明：</p>
+<p>方法说明：</p>
 <ul>
 <li><p>OpenUrlManager：（外部调用类）<br><strong><em>方法：</em></strong><br>openURL: 将外部传入的URL塞给 OpenUrlContextFactory 工厂(调用<br>contextWithURL 方法)，用以创建对应的 OpenUrlContext.</p>
 <ul>
